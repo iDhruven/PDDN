@@ -8,6 +8,7 @@ pipeline {
             sh '''
               echo Vagrant Stage
               uname -a
+              brew update python
               python3 --version
               '''
               //vagrant up
