@@ -13,6 +13,7 @@ pipeline {
               echo $PATH
               pwd
               python3 --version
+              /Users/idhruven/.jenkins/workspace/PDDN/vagrant --version
               '''
               //vagrant up
               //vagrant --version
