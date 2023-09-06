@@ -8,11 +8,12 @@ pipeline {
             sh '''
               echo Vagrant Stage
               uname -a
-              /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+            
               brew install vagrant
               python3 --version
               vagrant --version
               '''
+              ///bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
               //vagrant up
               //vagrant --version
               // Additional Vagrant commands can be added here
