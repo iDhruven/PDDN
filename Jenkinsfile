@@ -8,7 +8,7 @@ pipeline {
             sh '''
               echo Vagrant Stage
               uname -a
-              sudo apt install vagrant
+              apt install vagrant
               python3 --version
               vagrant --version
               '''
