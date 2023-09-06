@@ -2,7 +2,7 @@
 cd $WORKSPACE
 
 # Download the Vagrant installer
-curl -O https://releases.hashicorp.com/vagrant/X.Y.Z/vagrant_X.Y.Z_linux_amd64.zip
+curl -O https://releases.hashicorp.com/vagrant/2.3.7/vagrant_2.3.7_linux_amd64.zip
 
 # Unzip the installer
 unzip vagrant_X.Y.Z_linux_amd64.zip
