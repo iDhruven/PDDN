@@ -7,8 +7,9 @@ pipeline {
             // Run your Vagrant commands here
             sh '''
               echo Vagrant Stage
-              vagrant up
+              uname -a
               '''
+              //vagrant up
              // Additional Vagrant commands can be added here
         }
       }
