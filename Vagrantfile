@@ -1,0 +1,1 @@
+ENV['VAGRANT_NO_PARALLEL'] = 'yes'
