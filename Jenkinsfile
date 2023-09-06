@@ -5,10 +5,10 @@ pipeline {
       steps {
         script {
             // Run your Vagrant commands here
+            load 'Vagrant.sh'
             sh '''
               echo Vagrant Stage
               uname -a
-              load 'Vagrant.sh'
               python3 --version
               vagrant --version
               '''
