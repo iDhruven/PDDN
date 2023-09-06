@@ -8,8 +8,9 @@ pipeline {
             sh '''
               echo Vagrant Stage
               uname -a
-              brew update python
+              sudo apt install vagrant
               python3 --version
+              vagrant --version
               '''
               //vagrant up
               //vagrant --version
