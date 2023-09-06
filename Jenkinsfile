@@ -8,10 +8,11 @@ pipeline {
             sh '''
               echo Vagrant Stage
               uname -a
-              vagrant --version
+              python3 --version
               '''
               //vagrant up
-             // Additional Vagrant commands can be added here
+              //vagrant --version
+              // Additional Vagrant commands can be added here
         }
       }
     }
