@@ -11,4 +11,4 @@ unzip vagrant_2.3.7_linux_amd64.zip
 chmod +x vagrant
 
 # Optionally, move it to a directory included in the PATH
-#mv vagrant /usr/local/bin/
+mv vagrant /Users/idhruven/.jenkins/workspace/PDDN
