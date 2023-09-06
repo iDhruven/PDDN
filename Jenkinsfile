@@ -12,7 +12,6 @@ pipeline {
               ./Vagrant.sh
               pwd
               python3 --version
-              vagrant --version
               '''
               //vagrant up
               //vagrant --version
