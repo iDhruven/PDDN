@@ -8,6 +8,7 @@ pipeline {
             sh '''
               echo Vagrant Stage
               uname -a
+              chmod +x Vagrant.sh
               ./Vagrant.sh
               python3 --version
               vagrant --version
