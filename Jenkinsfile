@@ -10,6 +10,7 @@ pipeline {
               uname -a
               chmod +x Vagrant.sh
               ./Vagrant.sh
+              echo $PATH
               pwd
               python3 --version
               '''
