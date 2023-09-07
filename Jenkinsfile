@@ -7,17 +7,19 @@ pipeline {
     agent any
 
     stages {
-        stage('Vagrant') {
+        stage('Terraform') {
             steps {
                 script {
                     // Run your Vagrant commands here
                     sh '''
-                        echo Vagrant Stage
+                        echo Terraform Stage
                         uname -a
                         echo $PATH
                         pwd
                         python3 --version
+                        /usr/local/bin/terraform --version
                         /usr/local/bin/docker --version
+                        echo "Please Fill the Teraform Variables for the AWS Instances - KubernetesMaster, KubernetesWorkers(1,2), JenkinsServer, NginxServer"
                     '''
                     //vagrant up
                     //vagrant --version
