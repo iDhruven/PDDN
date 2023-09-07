@@ -11,7 +11,6 @@ pipeline {
               echo $PATH
               pwd
               python3 --version
-              terraform --version
               '''
               //vagrant up
               //vagrant --version
