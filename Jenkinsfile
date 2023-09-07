@@ -1,6 +1,6 @@
 pipeline {
     environment{
-        image_name = dhruven+springboot+mysql
+        image_name = dhruven_springboot+mysql
         docker_image = ''
     }
 
