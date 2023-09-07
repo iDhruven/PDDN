@@ -22,8 +22,7 @@ pipeline {
     stage ("Gradle Build") {
         steps {
             sh '''
-              chmod +x gradlew
-              ./gradlew clean build'
+              python3 gradlew.py
             '''
         }
     }   
