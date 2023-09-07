@@ -8,12 +8,10 @@ pipeline {
             sh '''
               echo Vagrant Stage
               uname -a
-              chmod +x Vagrant.sh
-              ./Vagrant.sh
               echo $PATH
               pwd
               python3 --version
-              /Users/idhruven/.jenkins/workspace/PDDN/vagrant --version
+              terraform --version
               '''
               //vagrant up
               //vagrant --version
