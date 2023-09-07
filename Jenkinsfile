@@ -17,6 +17,7 @@ pipeline {
                         echo $PATH
                         pwd
                         python3 --version
+                        /usr/local/bin/docker --version
                     '''
                     //vagrant up
                     //vagrant --version
