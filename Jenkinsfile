@@ -38,7 +38,7 @@ pipeline {
             steps {
                 script {
                     sh'''
-                        /usr/local/bin/docker build -t ${env.image_name} .
+                        /usr/local/bin/docker build -t $env.image_name .
                     '''
                     //dockerImage = docker.build("${env.image_name}", ".")
                 }
