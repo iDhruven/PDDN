@@ -37,7 +37,10 @@ pipeline {
         stage ("Building/Dockerizing Image") {
             steps {
                 script {
-                    dockerImage = /usr/local/bin/docker.build("${env.image_name}", ".")
+                    sh'''
+                        /usr/local/bin/docker build -t ${env.image_name} .
+                    '''
+                    //dockerImage = docker.build("${env.image_name}", ".")
                 }
             }
         }
