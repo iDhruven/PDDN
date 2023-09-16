@@ -118,12 +118,12 @@ if "--help" in sys.argv or "-h" in sys.argv:
     print("\nRun Gradle builds with the provided options and tasks.")
 
 # Exit with the same return code as the Gradle wrapper
-try:
-    exit_code = subprocess.check_output(cmd + ["--console=plain", "exitCode"], universal_newlines=True).strip()
-    sys.exit(exit_code)
-except subprocess.CalledProcessError:
-    print("Error: Unable to determine Gradle exit code.")
-    sys.exit(1)
+#try:
+#    exit_code = subprocess.check_output(cmd + ["--console=plain", "exitCode"], universal_newlines=True).strip()
+#    sys.exit(exit_code)
+#except subprocess.CalledProcessError:
+#    print("Error: Unable to determine Gradle exit code.")
+#    sys.exit(1)
 
 
 
