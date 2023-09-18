@@ -48,6 +48,11 @@ pipeline {
                 }
             }
         }
+
+        stage ("Post-Build") {
+            steps {
+                cleanWs()
+            }
         
     }
 }
