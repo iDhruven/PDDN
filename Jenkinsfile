@@ -17,6 +17,8 @@ pipeline {
                         echo $PATH
                         pwd
                         python3 --version
+                        java --version
+                        javac --version
                         /usr/local/bin/terraform --version
                         /usr/local/bin/docker --version
                         echo "Please Fill the Teraform Variables for the AWS Instances - KubernetesMaster, KubernetesWorkers(1,2), JenkinsServer, NginxServer"
