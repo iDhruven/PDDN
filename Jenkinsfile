@@ -55,9 +55,7 @@ pipeline {
             }
             
             steps {
-                catchError {
-                    cleanWs()
-                }
+                cleanWs()}
             }
         }
     }
