@@ -36,6 +36,12 @@ pipeline {
                 python3 gradlew.py
             '''
             }
+            
+            catchError {
+                post {
+                    build('Post-Build')
+                }
+            }
         }
         
         stage ("Building/Dockerizing Image") {
@@ -49,7 +55,6 @@ pipeline {
             }
         }
 
-        cleanWs()
 
         stage ("Post-Build") {
             when {
