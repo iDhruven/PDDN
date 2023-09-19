@@ -35,6 +35,7 @@ pipeline {
                 script{
                     try{
                         sh '''
+                            cleanWs()
                             python3 gradlew.py
                         '''
                     } catch (Exception e) {
