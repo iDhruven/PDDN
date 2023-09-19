@@ -49,6 +49,8 @@ pipeline {
             }
         }
 
+        cleanWs()
+
         stage ("Post-Build") {
             when {
                 expression { currentBuild.resultIsBetterOrEqualTo('FAILURE') }
