@@ -56,7 +56,7 @@ pipeline {
                 }
             }
 
-            post (always) {
+            post(always) {
                 failFast false
             }
         }
