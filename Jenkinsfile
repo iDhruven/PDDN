@@ -55,7 +55,7 @@ pipeline {
             }
             
             steps {
-                cleanWs()}
+                cleanWs()
             }
         }
     }
