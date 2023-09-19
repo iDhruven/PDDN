@@ -50,10 +50,8 @@ pipeline {
         }
 
         stage ("Post-Build") {
-            steps{
                 catchError {
                     cleanWs()
-                }
             }
         }
     }
