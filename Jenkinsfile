@@ -35,6 +35,7 @@ pipeline {
                 script{
                         //cleanWs()
                         sh '''
+                            chmod +x ./gradlew
                             ./gradlew clean build
                             python3 gradlew.py
                         '''
