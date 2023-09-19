@@ -17,6 +17,7 @@ pipeline {
                         echo $PATH
                         pwd
                         python3 --version
+                        which java
                         java --version
                         javac --version
                         /usr/local/bin/terraform --version
