@@ -33,15 +33,10 @@ pipeline {
         stage ("Gradle Build") {
             steps {
                 script{
-                    try{
                         //cleanWs()
                         sh '''
                             python3 gradlew.py
                         '''
-                    } catch (Exception e) {
-                        currentBuild.result = 'SUCCESS' // Mark the build as SUCCESS even if Stage 1 fails
-                        error("Stage 1 failed but continuing to the next stage.")
-                    }
                 }
             }
         }
@@ -59,10 +54,6 @@ pipeline {
 
 
         stage ("Post-Build") {
-            when {
-                expression { currentBuild.resultIsBetterOrEqualTo('FAILURE') }
-            }
-            
             steps {
                 cleanWs()
             }
