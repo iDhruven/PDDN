@@ -50,14 +50,14 @@ pipeline {
         }
 
         stage ("Post-Build") {
+            when {
+                expression { currentBuild.resultIsBetterOrEqualTo('FAILURE') }
+            }
+            
             steps {
                 catchError {
                     cleanWs()
                 }
-            }
-
-            post(always) {
-                failFast false
             }
         }
     }
