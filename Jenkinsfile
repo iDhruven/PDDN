@@ -33,11 +33,11 @@ pipeline {
         stage ("Gradle Build") {
             steps {
                 script{
-                        //cleanWs()
+                        cleanWs()
+                        // python3 gradlew.py
                         sh '''
                             chmod +x ./gradlew
-                            ./gradlew clean build
-                            python3 gradlew.py
+                            ./gradlew clean build       
                         '''
                 }
             }
