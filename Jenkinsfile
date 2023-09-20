@@ -15,6 +15,7 @@ pipeline {
                         echo Terraform Stage
                         uname -a
                         echo $PATH
+                        echo $JAVA_HOME
                         pwd
                         python3 --version
                         which java
