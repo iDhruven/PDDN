@@ -19,13 +19,13 @@ pipeline {
                         pwd
                         python3 --version
                         which java
-                        java --version
                         javac --version
                         /usr/local/bin/terraform --version
                         /usr/local/bin/docker --version
                         echo "Please Fill the Teraform Variables for the AWS Instances - KubernetesMaster, KubernetesWorkers(1,2), JenkinsServer, NginxServer"
                     '''
                     //vagrant up
+                    //java --version
                     //vagrant --version
                     // Additional Vagrant commands can be added here
                 }
